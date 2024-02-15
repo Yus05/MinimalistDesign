@@ -1,0 +1,1008 @@
+:root{
+    --color-green: #8EACAA;
+    --color-dark: #000000;
+    --color-white: #FFFFFF;
+    --color-soft_dark: #111111;
+    --color-soft_black: #333;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    background-color: var(--color-green);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+/* ***************************************
+                HEADER
+***************************************
+*/
+/* Hero image */
+.hero__image-header{
+    background-image: url(/assets/img_webp/header_webp/yellow-chair.webp);
+    max-width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -6rem 0;
+}
+/* Contenedor texto */
+.hero__image-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: end;
+    text-align: left;
+    background-color: rgba(17, 17, 17,.7);
+    color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem 2rem;
+}
+/* Estilos del title */
+.hero__image-text h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* ***************************************
+                MAIN
+***************************************
+*/
+
+/* *********** INTRODUCE *********** */
+/* Trabajo en los estilos de TODO el contenedor de la seccion. */
+.introduce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--color-white);
+    padding: 2.6rem;
+    text-align: center;
+}
+/* Estilos de la img. */
+.image__introduce{
+    background-image: url(/assets/img_webp/single_building-dark/build-dark\ \(3\).webp);
+    width: 18rem;
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Estilos del title. */
+.introduce h2{
+    font-weight: 100;
+    font-size: 2.8rem;
+    line-height: 3rem;
+}
+/* Estilos del parrafo. */
+.introduce p{
+    line-height: 1.5rem;
+}
+/* Estilos del boton. */
+.introduce a{
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    padding: .7rem 3rem;
+    transition: background-color 500ms ease;
+}
+.introduce a:hover{
+    background-color: rgba(255, 255, 255,.6);
+}
+
+/* *********** MIDDLE *********** */
+/* Estilos al contenedor general que contiene las dos img */
+.middle{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Estilos al fondo que contiene color y los textos */
+.text__about-us,
+.text__what-we-do{
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17,.3);
+    width: 100%;
+    height: 100%;
+}
+/* Estilos a la primera img */
+.image-about-us{
+    background-image: url(/assets/img_webp/midles_webp/7.webp);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Estilos generales a los textos de la primera imagen */
+.text__about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    gap: 1rem;
+    color: #FFF;
+    padding: 2rem 1rem 0 1rem;
+}
+/* Estilos al title */
+.text__about-us h2{
+    font-size: 3rem;
+    font-weight: 100;
+}
+/* Estilos al parrafo */
+.text__about-us p{
+    text-align: right;
+}
+/* Estilos al boton */
+.text__about-us a{
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    font-weight: bold;
+    padding: .1rem;
+    letter-spacing: 0.1rem;
+    transition: transform 25ms ease;
+}
+.text__about-us a:hover,
+.text__what-we-do a:hover{
+    transform: scale(1.01);
+}
+/* Estilos de la segunda imagen */
+.image-what-we-do{
+    background-image: url(/assets/img_webp/midles_webp/6.webp);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Estilos generales del texto de la segunda imagen. */
+.text__what-we-do{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    color: var(--color-dark);
+    padding: 2rem 1rem 0 1rem;
+}
+/* Estilos del title de la segunda imagen */
+.text__what-we-do h2{
+    font-size: 3rem;
+    font-weight: 100;
+}
+/* Estilos al boton de la segunda imagen */
+.text__what-we-do a{
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    font-weight: bold;
+    padding: .1rem;
+    letter-spacing: 0.1rem;
+    transition: transform 25ms ease;
+}
+
+/* ********** HERO-MIDDLE ********** */
+/* Estilos del contenedor principal */
+.hero__middle{
+    padding: 2rem;
+}
+/* Estilos de la img. */
+.hero__middle-image{
+    background-image: url(/assets/img_webp/hero-middle_webp/photoholgic-RSSZ8XEuwpc-unsplash.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(1);
+}
+/* Estilos del contenedor de los textos */
+.hero__middle-text{
+    top: 0;
+    left: 0;
+    width: 18.75rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+.hero__middle-text h2{
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+.hero__middle-text p{
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+
+/* ***** IMAGES-PERSPECTIVE ******* */
+/* Estilo al contenedor principal. */
+.images__perspective{
+    display: flex;
+    flex-flow: row wrap;
+}
+/* Estilos al contenedor de la img y del bg */
+.images__perspective-contain{
+    width: 100%;
+    height: 70vh;
+}
+/* Estilos comunes a todas las img */
+.perspective{
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+/* Cada una de las images */
+.images__perspective-1{
+    background-image: url(/assets/img_webp/four-buildings_webp/700/1.webp);
+    background-position: center;
+}
+.images__perspective-2{
+    background-image: url(/assets/img_webp/four-buildings_webp/700/2.webp);
+    background-position: center;
+}
+.images__perspective-3{
+    background-image: url(/assets/img_webp/four-buildings_webp/700/3.webp);
+    background-position: center;
+}
+.images__perspective-4{
+    background-image: url(/assets/img_webp/four-buildings_webp/700/4.webp);
+    background-position: center;
+}
+/* Estilos al bg que va encima de las images */
+.images__perspective-bg{
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    transition: background-color 300ms ease;
+}
+.images__perspective-bg:hover{
+    background-color: #00000050;
+}
+
+
+
+/* ***** DESCRIPTION ******* */
+/* Estilos al contenedor principal. */
+.description{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5rem;
+    text-align: center;
+    color: var(--color-white);
+    line-height: 1.7rem;
+}
+/* Estilos propios de la image. */
+.image__description{
+    background-image: url(/assets/img_webp/single-buildings_webp/500.webp);
+    width: 18.75rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(1);
+}
+
+
+/* ***** STAFF ******* */
+/* Estilos a la imagen ppal. */
+.image__staff{
+    background-image: url(/assets/img_webp/curve-img_webp/christian-perner-fYO1T495QCM-unsplash.webp);
+    width: 100%;
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Estilos al contenedor de las cards*/
+.card__contain{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140vh;
+    background-color: rgba(17, 17, 17,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* Agrego las img-profile */
+.image__profile-top{
+    background-image: url(/assets/img_webp/staff_webp/2.webp);
+}
+.image__profile-bottom{
+    background-image: url(/assets/img_webp/staff_webp/1.webp);
+}
+/* Estilos comunes de las img-profile */
+.imagen__profile{
+    width: 5rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+/* Estilos de las card */
+.card{
+    background-color: var(--color-white);
+    width: 19rem;
+    height: 25rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    transition: transform 500ms ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+/* ***** CONTACT ******* */
+/* Estilos al contenedor general */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    color: var(--color-white);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+/* Estilos al contenedor de las rrss y numeros */
+.contact__leads{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos title */
+.contact__leads h2{
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+/* Estilos al contenedor de las rrss */
+.social__media{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+/* Estilos a las img de las rrss */
+.social__media img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+/* Estilos al contenedor de los numeros */
+.phones{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* Estilos al parrafo */
+.phones p{
+    font-size: 2rem;
+}
+.contact__text{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.social__media a{
+    transition: transform 500ms ease;
+}
+.social__media a:hover{
+    transform: scale(1.5);
+}
+
+/* ***** FOOTER ******* */
+footer{
+    height: 30vh;
+    background-color: var(--color-soft_black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2.5rem;
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+/* ********************************************************************************** */
+/* Small devices (landscape phones, 576px-36em and up) */
+@media screen and (min-width:36em){
+    /* **********************************
+                HEADER
+    ***********************************
+    */
+    /* Ajusto posicion de la img */
+    .hero__image-header{
+        background-position: left;
+    }
+    /* Aumento el espacio interno de los textos */
+    .hero__image-text{
+        padding: 0 0 2.5rem 2.5rem;
+    }
+    /* Ajusto el salto de linea del title */
+    .hero__image-text h1{
+        padding-right: 2rem;
+    }
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+    /* *********** INTRODUCE ******* */
+
+    /* Solo ajusto el tamanio de la img ppal. */
+    .image__introduce{
+        width: 27rem;
+        height: 27rem;
+    }
+
+    /* ********** MIDDLE *********** */
+
+    .middle{
+        height: 160vh;
+    }
+    .image-about-us,
+    .image-what-we-do{
+        height: 80vh;
+    }
+
+
+    /* ******** HERO-MIDDLE ******** */
+    /* Estilos al contenedor principal */
+    .hero__middle{
+        padding: 3rem 2.5rem;
+    }
+    /* Ajuste estilos del titulo */
+    .hero__middle-text h2{
+        font-size: 2.9rem;
+        line-height: 3rem;
+    }
+
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+    
+    /* EN IMAGES-PERSPECTIVE NO HAGO CAMBIOS EN 576 */
+
+
+    /* ***** DESCRIPTION ******* */
+    /* Estilos al contenedor ppal */
+    .description{
+        gap: 1.5rem;
+    }
+    /* Aumento el tamanio de la image */
+    .image__description{
+        width: 22rem;
+        height: 20rem;
+    }
+
+
+    /* ***** STAFF ******* */
+    /* Ajusto el tamanio de img-profile */
+    .imagen__profile{
+        width: 6rem;
+        height: 6rem;
+    }
+    /* Ajuto tamanio de la card */
+    .card{
+        width: 22rem;
+        height: 25rem;
+        padding: 0 2rem;
+    }
+
+
+    /* ***** CONTACT ******* */
+    /* Estilos al contenedor principal */
+    .contact{
+        padding: 0 3.5rem;
+    }
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 4rem;
+    }
+
+}
+
+
+
+/* ********************************************************************************** */
+/* Medium devices (tablets, 768px-48em and up) */
+@media screen and  (min-width:48em){
+    /* ***********************************
+                HEADER
+    ***********************************
+    */
+
+    /* EN HEADER NO HIZO FALTA CAMBIOS. */
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+    /* ******** INTRODUCE ********** */
+
+    /* Estilos del contenedor ppal para ajustar los textos. */
+    .introduce{
+        padding: 2.6rem 3.7rem;
+    }
+    /* Solo ajusto el tamanio de la img ppal. */
+    .image__introduce{
+        width: 37rem;
+        height: 37rem;
+    }
+
+     /* *********** MIDDLE *********** */
+
+    /* EN MIDDLE NO HAGO CAMBIOS PARA 768 */
+
+
+    /* ******** HERO-MIDDLE ******** */
+    
+    /* EN HER0-MIDDLE NO HAGO CAMBIOS PARA 768 */
+
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+
+    /* EN IMAGES-PERSPECTIVE NO HAGO CAMBIOS EN 768 */
+
+
+    /* ***** DESCRIPTION ******* */
+    .description{
+        padding: 0 4rem;
+    }
+
+
+    /* ***** STAFF ******* */
+    
+    /* EN STAFF NO HAGO CAMBIOS EN 768 */
+
+
+    /* ***** CONTACT ******* */
+    /* Estilos al contenedor ppal */
+    .contact{
+        padding: 0 2rem;
+    }
+    /* Ajusto el contenedor de las rrrss y numeros */
+    .contact__leads{
+        align-items: start;
+        width: 40rem;
+    }
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 10rem;
+    }
+    
+}
+
+
+
+/* ********************************************************************************** */
+/* Large devices (desktops, 992px-62em and up) */
+@media screen and  (min-width:62em){
+    /* 
+    ********************************
+                HEADER
+    ********************************
+    */
+
+    /* Ajusto el salto de linea del title */
+    .hero__image-text h1{
+        padding-right: 15rem;
+    }
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+
+    /* ******* INTRODUCE ********** */
+
+    /* Estilos del contenedor ppal para ajustar los textos. */
+    .introduce{
+        padding: 2.6rem 10rem;
+    }
+    /* Solo ajusto el tamanio de la img ppal. */
+    .image__introduce{
+        width: 40rem;
+        height: 40rem;
+    }
+
+    /* ********** MIDDLE ********** */
+    /* Estilos al contenedor principal de la seccion. */
+    .middle{
+        flex-direction: row;
+        height: 80vh;
+    }
+    /* Ajusto el tamanio de los dos contenedores internos para que puedan estar en fila */
+    .middle__about-us,
+    .middle__what-we-do{
+        width: 50%;
+    }
+    /* Estilos a los contenedores de texto para ajustar los p. */
+    .text__about-us{
+        padding-left: 2rem;
+    }
+    .text__what-we-do{
+        padding-right: 2rem;
+    }
+
+    /* ******** HERO-MIDDLE ******** */
+    /* Estilos al contenedor principal */
+    .hero__middle{
+        padding: 4rem 3.5rem;
+    }
+    /* Estilos del parrafo para ajustar el texto. */
+    .hero__middle-text p{
+        padding: 0 4rem;
+    }
+
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+    /* Estilos al contenedor de la img y el bg */
+    .images__perspective-contain{
+        width: 50%;
+        height: 70vh;
+    }
+    
+
+    /* ***** DESCRIPTION ******* */
+    /* Estilos al contenedor ppal */
+    .description{
+        gap: 2.5rem;
+        padding: 0 7rem;
+    }
+    /* Aumento el tamanio de la image */
+    .image__description{
+        width: 25rem;
+        height: 22rem;
+    }
+
+
+    /* ***** STAFF ******* */
+    /* Ajusto tanto el tamanio de la img como del container de las cars */
+    .image__staff,
+    .card__contain{
+        height: 80vh;
+    }
+    
+    /* Las cards una al lado de la otra */
+    .card__contain{
+        flex-direction: row;
+    }
+
+
+    /* ***** CONTACT ******* */
+    /* Estilos al contenedor ppal */
+    .contact{
+        padding: 0 2rem;
+        flex-direction: row;
+        height: 70vh;
+    }
+    /* Ajusto el contenedor de las rrrss y numeros */
+    .contact__leads{
+        width: 20rem;
+    }
+    /* Estilos al texto*/
+    .contact__text{
+        width: 20rem;
+        text-align: left;
+    }
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 17rem;
+    }
+
+
+}
+
+
+
+/* ********************************************************************************** */
+/* Extra large devices (large desktops, 1200-75em and up) */
+@media screen and  (min-width:75em){
+    /* **********************************
+                HEADER
+    **********************************
+    */
+    /* Ajusto la posicion de la img. */
+    .hero__image-header{
+        background-position: left -15rem;
+    }
+    /* Aumento el espacio entre bordes y textos. */
+    .hero__image-text{
+        padding: 0 0 3rem 3rem;
+    }
+    /* Aumento el tamanio del texto */
+    .hero__image-text h3{
+        font-size: 1.2rem;
+    }
+    /* Estilos al title para hacerlo saltar de linea y aumento de la fuente. */
+    .hero__image-text h1{
+        padding-right: 30rem;
+        font-size: 3.2rem;
+    }
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+
+    /* ******** INTRODUCE ******** */
+
+    /* Empiezo a tocar el padding del parrafo para hacerlo solo a el mas pequeno a los lados. */
+    .introduce p{
+        padding: 0 8rem;
+    }
+
+    /* ********** MIDDLE ********** */
+    /* Estilos a los contenedores de texto para ajustar los p. */
+    .text__about-us{
+        padding-left: 12rem;
+    }
+    .text__what-we-do{
+        padding-right: 12rem;
+    }
+
+
+    /* ******** HERO-MIDDLE ******** */
+
+    /* Estilos del parrafo para ajustar el texto. */
+    .hero__middle-text p{
+        padding: 0 6rem;
+    }
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+
+    /* EN IMAGES-PERSPECTIVE NO HAGO CAMBIOS EN 1200 */
+
+
+    /* ***** DESCRIPTION ******* */
+    /* Estilos al contenedor ppal */
+    .description{
+        padding: 0 15rem;
+    }
+
+
+    /* ***** STAFF ******* */
+    /* separo las cards */
+    .card__contain{
+        gap: 4rem;
+    }
+
+
+    /* ***** CONTACT ******* */
+    /* Estilos al contenedor ppal. */
+    .contact{
+        gap: 10rem;
+    }
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 23.5rem;
+    }
+
+
+
+}
+
+
+
+/* ********************************************************************************** */
+/* Extra large devices (large desktops, 1440-90em and up) */
+@media screen and  (min-width:90em){
+    /* 
+    ********************************
+                HEADER
+    **********************************
+    */
+
+    /* Aumento el tamanio del alto de la img y su ubicacion */
+    .hero__image-header{
+        height: 100vh;
+        background-position: left -17.5rem;
+    }
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+    /* ********* INTRODUCE ********* */
+
+    /* Solo ajusto el padding lateral para darle estilos a los textos. */
+    .introduce{
+        padding: 2.6rem 18rem;
+    }
+
+    /* ********** MIDDLE ********** */
+    /* Estilos a los contenedores de texto para ajustar los p. */
+    .text__about-us{
+        padding-left: 19rem;
+    }
+    .text__what-we-do{
+        padding-right: 19rem;
+    }
+
+
+    /* ******** HERO-MIDDLE ******** */
+    /* Ajustes al contenedor principal */
+    .hero__middle{
+        padding: 3.5rem 8rem;
+    }
+    /* Estilos del parrafo para ajustar el texto. */
+    .hero__middle-text p{
+        padding: 0 16rem;
+    }
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+
+    .images__perspective-contain{
+        width: 25%;
+        height: 60vh;
+    }
+    .perspective{
+        height: 60vh;
+    }
+    .images__perspective-bg{
+        height: 60vh;
+    }
+
+
+    /* ***** DESCRIPTION ******* */
+    /* Estilos al contenedor ppal */
+    .description{
+        padding: 0 22rem;
+    }
+
+
+    /* ***** STAFF ******* */
+    /* Ajusto tanto el tamanio de la img como del container de las cars */
+    .image__staff,
+    .card__contain{
+        height: 70vh;
+    }
+
+
+
+    /* ***** CONTACT ******* */
+    /* EN CONTACT NO HAGO CAMBIOS EN 1440 */
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 31rem;
+    }
+    
+
+}
+
+
+
+/* ********************************************************************************** */
+/* Extra large devices (large desktops, 1600-100em and up) */
+@media screen and  (min-width:100em){
+    /* 
+    ********************************
+                HEADER
+    ********************************
+    */
+    /* Ajusto la ubicacion de la img. */
+    .hero__image-header{
+        background-position: left -21rem;
+    }
+
+    /* **********************************
+                MAIN
+    ***********************************
+    */
+    /* ******** INTRODUCE ********** */
+    /* Solo ajusto el padding lateral para darle estilos a los textos. */
+    .introduce{
+        padding: 2.6rem 25rem;
+    }
+
+    /* ********** MIDDLE ********** */
+    /* No voy a hacer cambios en esta seccion para 1600 */
+
+    /* ******** HERO-MIDDLE ******** */
+    /* Ajustes al contenedor principal */
+    .hero__middle{
+        padding: 3.5rem 9rem;
+    }
+    /* Estilos del parrafo para ajustar el texto. */
+    .hero__middle-text p{
+        padding: 0 20rem;
+    }
+
+
+    /* **** IMAGES-PERSPECTIVE ***** */
+
+    /* EN IMAGES-PERSPECTIVE NO HAGO CAMBIOS EN 1600 */
+
+
+    /* ***** DESCRIPTION ******* */
+    /* Estilos al contenedor ppal */
+    .description{
+        padding: 0 27rem;
+    }
+
+
+    /* ********** STAFF ********** */
+    /* No voy a hacer cambios en esta seccion para 1600 */
+
+
+    /* ***** CONTACT ******* */
+    /* EN CONTACT NO HAGO CAMBIOS EN 1600 */
+
+
+    /* ***** FOOTER ******* */
+    footer{
+        padding: 0 36rem;
+    }
+
+}
+
+
+/* https://nicepage.com/html-templates/preview/perfect-architecture-ideas-130328?device=desktop */
+
+/*
+PENDIENTES:
+- Debajo de las 4 img en description, puedes trabajar un par de enlaces que hagan desaparecer y aparecer texto.
+ */
