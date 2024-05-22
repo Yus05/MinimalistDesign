@@ -33,6 +33,116 @@ a{
                 HEADER
 ***************************************
 */
+/* Menu burger */
+/* Probando con el contenedor general */
+.menu__burger{
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Empezamos con el checkbox -> .off-canvas-btn */
+.off-canvas-btn{
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+}
+/* Vamos con la etiqueta label a crear la 1era rayita: */
+.off-canvas-burger{
+    position: fixed;
+    z-index: 998;
+    width: 3rem;
+    height: .6rem;
+    background-color: var(--color-white);
+    border-radius: .3rem;
+    /* transform: rotate(0deg) translate(0, -1.2rem); */
+    transform-origin: top left;
+    transition: transform 0.5s ease, background-color 500ms ease;
+}
+/* Ahora con las clases before y after vamos a crear las otras 2 rayitas: */
+.off-canvas-burger::before,
+.off-canvas-burger::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: .6rem;
+    background-color: var(--color-white);
+    border-radius: .3rem;
+    transition: transform 500ms ease;
+}
+/* Ahora voy a ubicar el after y el before */
+.off-canvas-burger::before{
+    transform: rotate(0deg) translate(0, -.9rem);
+}
+.off-canvas-burger::after{
+    transform: rotate(0deg) translate(0,.3rem);
+}
+/* Ahora vamos a darle animacion a las rayitas, para que se forme una equis al momento de darle checked. */
+/* Cuando btn este checkeado a su hermano burger aplicla transparent */
+.off-canvas-btn:checked + .off-canvas-burger{
+    background-color: transparent;
+}
+/* Ahora vamos con la X */
+.off-canvas-btn:checked + .off-canvas-burger::before{
+    transform: rotate(45deg) translate(0, 0);
+}
+.off-canvas-btn:checked + .off-canvas-burger::after{
+    transform: rotate(-45deg) translate(.4rem, -0.5rem);
+}
+/* Ahora vamos con el menu: */
+/* Primero lo maquetamos */
+.off-canvas-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3333336c;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 500ms ease-in-out;
+    transform: translate(0, -100%);
+}
+/* Damos estilos al contenedor del menu */
+.off-canvas-menu-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Estilos a los links */
+.off-canvas-link{
+    color: var(--color-white);
+    border-bottom: thin solid var(--color-white);
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 300ms ease;
+}
+.off-canvas-link:first-child{
+    border-top: thin solid var(--color-white);
+}
+/* Color al hover de los enlaces: */
+.off-canvas-link:hover{
+    background-color: var(--color-green);
+}
+/* Ahora vamos a emlazar el menu al checked: */
+/* Meto los enlaces en el lienzo: */
+/* Enlazo el checked con el selector de hermanos general para mostrar el menu: */
+.off-canvas-btn:checked ~ .off-canvas-menu{
+    transform: translate(0, 0);
+}
+
+/* ************************************ */
 /* Hero image */
 .hero__image-header{
     background-image: url(/assets/img_webp/header_webp/yellow-chair.webp);

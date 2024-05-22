@@ -7,7 +7,27 @@
     <title>Minimalist-Web</title>
 </head>
 <body>
-    <header>
+    
+    
+    <header id="home">
+        <!-- Menu Burger -->
+        <div class="menu__burger">
+            <!-- boton: -->
+            <input type="checkbox" class="off-canvas-btn">
+            <!-- 3 rayitas -->
+            <label class="off-canvas-burger"></label>
+            <!-- menu: -->
+            <nav class="off-canvas-menu">
+                <div class="off-canvas-menu-container">
+                    <a href="#home" class="off-canvas-link">Home</a>
+                    <a href="#aboutus-whatwedo" class="off-canvas-link">About Us</a>
+                    <a href="#aboutus-whatwedo" class="off-canvas-link">What We Do</a>
+                    <a href="#projects" class="off-canvas-link">Projects</a>
+                    <a href="#team" class="off-canvas-link">Team</a>
+                    <a href="#contactus" class="off-canvas-link">Contact Us</a>
+                </div>
+            </nav>
+        </div>
         <!-- ANALIZA SI EL MENU VA A IR FUERA O DENTRO HEADER CONTAIN, ANALIZALO DESPUES DE VER SU CODIGO. -->
         <div class="header__menu">
         </div>
@@ -35,7 +55,7 @@
         </section>
 
         <!-- ######################## -->
-        <div class="middle">
+        <div class="middle" id="aboutus-whatwedo">
             <div class="middle__about-us relative">
                 <div class="image-about-us"></div>
                 <section class="text__about-us absolute">
@@ -55,7 +75,7 @@
         </div>
 
         <!-- ######################## -->
-        <div class="hero__middle">
+        <div class="hero__middle" id="projects">
             <div class="hero__middle-contain relative">
                 <div class="hero__middle-image"></div>
                 <section class="hero__middle-text absolute">
@@ -94,7 +114,7 @@
         </div>
 
         <!-- ######################## -->
-        <div class="staff relative">
+        <div class="staff relative" id="team">
             <div class="image__staff"></div>
             <div class="card__contain absolute">
                 <article class="card left">
@@ -114,7 +134,7 @@
 
 
         <!-- ######################## -->
-        <div class="contact">
+        <div class="contact" id="contactus">
             <section class="contact__leads">
                 <h2><strong>CONTACT</strong> US</h2>
                 <div class="social__media">
